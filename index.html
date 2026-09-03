@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Una pausa estoica para cada día."
+  >
+
+  <meta
+    name="theme-color"
+    content="#f7f6f2"
+  >
+
+  <title>STOA — Una pausa estoica</title>
+
+  <link
+    rel="manifest"
+    href="manifest.json"
+  >
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+</head>
+
+
+<body>
+
+  <main class="app">
+
+
+    <!-- =========================
+         HEADER
+         ========================= -->
+
+    <header class="app-header">
+
+      <span class="logo">
+        STOA
+      </span>
+
+      <span
+        class="date"
+        id="date"
+      ></span>
+
+    </header>
+
+
+    <!-- =========================
+         FRASE
+         ========================= -->
+
+    <section class="quote-container">
+
+      <p class="eyebrow">
+        PARA ESTE MOMENTO
+      </p>
+
+      <blockquote id="quote">
+        No son las cosas las que nos perturban,
+        sino lo que pensamos sobre ellas.
+      </blockquote>
+
+      <p
+        class="author"
+        id="author"
+      >
+        — Epicteto
+      </p>
+
+    </section>
+
+
+    <!-- =========================
+         QUÉ NECESITÁS AHORA
+         ========================= -->
+
+    <section class="needs">
+
+      <p class="needs-title">
+        ¿Qué necesitás ahora?
+      </p>
+
+      <div class="needs-options">
+
+        <button
+          class="need-button"
+          data-category="calma"
+        >
+          Calma
+        </button>
+
+        <button
+          class="need-button"
+          data-category="perspectiva"
+        >
+          Perspectiva
+        </button>
+
+        <button
+          class="need-button"
+          data-category="acción"
+        >
+          Acción
+        </button>
+
+        <button
+          class="need-button"
+          data-category="disciplina"
+        >
+          Disciplina
+        </button>
+
+        <button
+          class="need-button"
+          data-category="tiempo"
+        >
+          Tiempo
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         REFLEXIÓN
+         ========================= -->
+
+    <section class="reflection">
+
+      <p>
+        ¿Qué depende de vos ahora?
+      </p>
+
+    </section>
+
+
+    <!-- =========================
+         ACCIONES
+         ========================= -->
+
+    <footer class="actions">
+
+      <button
+        id="favoriteButton"
+        class="secondary-button"
+        aria-label="Guardar frase"
+      >
+        ♡
+      </button>
+
+      <button
+        id="generateButton"
+        class="main-button"
+      >
+        Otra perspectiva
+      </button>
+
+      <button
+        id="shareButton"
+        class="secondary-button"
+        aria-label="Compartir frase"
+      >
+        ↗
+      </button>
+
+    </footer>
+
+
+  </main>
+
+
+  <!-- =========================
+       JAVASCRIPT
+       ========================= -->
+
+ <script src="quotes.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
