@@ -2,8 +2,6 @@
 // STOA — SERVICE WORKER
 // =========================
 
-const CACHE_NAME = "stoa-v1.0.0";
-
 const FILES_TO_CACHE = [
   "./",
   "./index.html",
@@ -11,6 +9,7 @@ const FILES_TO_CACHE = [
   "./script.js",
   "./quotes.js",
   "./manifest.json",
+  "./privacy.html",
   "./icons/icon-192.png",
   "./icons/icon-512.png"
 ];
