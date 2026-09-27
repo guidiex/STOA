@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">STOA</string>
+    <string name="title_activity_main">STOA</string>
+    <string name="package_name">com.guidiex.stoa</string>
+    <string name="custom_url_scheme">com.guidiex.stoa</string>
+</resources>

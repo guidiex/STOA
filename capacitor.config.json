@@ -1,0 +1,11 @@
+{
+  "appId": "com.guidiex.stoa",
+  "appName": "STOA",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "http"
+  },
+  "android": {
+    "resolveServiceWorkerRequests": false
+  }
+}

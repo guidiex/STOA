@@ -1,0 +1,428 @@
+/* =========================
+   STOA — STYLE
+   ========================= */
+
+:root {
+  --bg: #f7f6f2;
+  --text: #171717;
+  --muted: #8a8a84;
+  --line: #deddd7;
+
+  --button: #171717;
+  --button-text: #ffffff;
+
+  --max-width: 720px;
+}
+
+
+/* =========================
+   RESET
+   ========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+body {
+  min-height: 100vh;
+
+  background: var(--bg);
+  color: var(--text);
+
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* =========================
+   APP
+   ========================= */
+
+.app {
+  width: min(100%, var(--max-width));
+  min-height: 100vh;
+
+  margin: 0 auto;
+  padding: 32px 28px 28px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.date {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+
+/* =========================
+   FRASE
+   ========================= */
+
+.quote-container {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 52px 0 36px;
+
+  animation: quoteEnter 0.65s ease both;
+}
+
+.eyebrow {
+  margin-bottom: 28px;
+
+  color: var(--muted);
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+blockquote {
+  max-width: 650px;
+
+  font-size: clamp(32px, 6vw, 58px);
+  font-weight: 400;
+
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+
+  text-wrap: balance;
+}
+
+.author {
+  margin-top: 28px;
+
+  color: var(--muted);
+
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+/* =========================
+   QUÉ NECESITÁS AHORA
+   ========================= */
+
+.needs {
+  padding: 24px 0 22px;
+
+  border-top: 1px solid var(--line);
+}
+
+.needs-title {
+  margin-bottom: 14px;
+
+  color: var(--muted);
+
+  font-size: 12px;
+  font-weight: 500;
+
+  text-align: center;
+}
+
+.needs-options {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 9px;
+}
+
+.need-button {
+  padding: 9px 15px;
+
+  border: 1px solid var(--line);
+  border-radius: 999px;
+
+  background: transparent;
+  color: var(--text);
+
+  font-family: inherit;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.16s ease;
+}
+
+.need-button:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.need-button:active {
+  transform: scale(0.96);
+}
+
+
+/* BOTÓN DE CATEGORÍA SELECCIONADO */
+
+.need-button.active {
+  background: var(--text);
+  color: var(--bg);
+
+  border-color: var(--text);
+}
+
+
+/* =========================
+   REFLEXIÓN
+   ========================= */
+
+.reflection {
+  padding: 20px 0;
+
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+
+  text-align: center;
+}
+
+.reflection p {
+  color: var(--muted);
+
+  font-size: 14px;
+  font-weight: 400;
+
+  line-height: 1.4;
+}
+
+
+/* =========================
+   ACCIONES
+   ========================= */
+
+.actions {
+  display: grid;
+
+  grid-template-columns: 48px 1fr 48px;
+
+  gap: 14px;
+
+  padding-top: 24px;
+}
+
+
+/* =========================
+   BOTÓN PRINCIPAL
+   ========================= */
+
+.main-button {
+  min-height: 48px;
+
+  border: none;
+  border-radius: 999px;
+
+  background: var(--button);
+  color: var(--button-text);
+
+  font-family: inherit;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.18s ease,
+    opacity 0.18s ease;
+}
+
+.main-button:hover {
+  opacity: 0.88;
+}
+
+.main-button:active {
+  transform: scale(0.97);
+}
+
+
+/* =========================
+   BOTONES SECUNDARIOS
+   ========================= */
+
+.secondary-button {
+  width: 48px;
+  height: 48px;
+
+  border: 1px solid var(--line);
+  border-radius: 50%;
+
+  background: transparent;
+  color: var(--text);
+
+  font-family: inherit;
+  font-size: 20px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.18s ease;
+}
+
+.secondary-button:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.secondary-button:active {
+  transform: scale(0.94);
+}
+
+
+/* =========================
+   ANIMACIÓN
+   ========================= */
+
+@keyframes quoteEnter {
+
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+/* =========================
+   CELULAR
+   ========================= */
+
+@media (max-width: 600px) {
+
+  .app {
+    padding: 24px 22px 20px;
+  }
+
+  .quote-container {
+    padding: 40px 0 30px;
+  }
+
+  blockquote {
+    font-size: clamp(32px, 9.5vw, 44px);
+    line-height: 1.08;
+  }
+
+  .author {
+    margin-top: 22px;
+  }
+
+  .needs {
+    padding: 20px 0;
+  }
+
+  .need-button {
+    padding: 9px 13px;
+    font-size: 12px;
+  }
+
+}
+
+
+/* =========================
+   PANTALLAS BAJAS
+   ========================= */
+
+@media (max-height: 700px) {
+
+  .quote-container {
+    padding: 28px 0 24px;
+  }
+
+  blockquote {
+    font-size: clamp(27px, 7vw, 40px);
+  }
+
+  .needs {
+    padding: 16px 0;
+  }
+
+  .reflection {
+    padding: 16px 0;
+  }
+
+  .actions {
+    padding-top: 18px;
+  }
+
+}
+
+
+/* =========================
+   DARK MODE
+   ========================= */
+
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    --bg: #111111;
+    --text: #f4f3ef;
+    --muted: #8f8f8a;
+    --line: #2b2b2a;
+
+    --button: #f4f3ef;
+    --button-text: #111111;
+  }
+
+  .secondary-button:hover,
+  .need-button:hover {
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  .need-button.active {
+    background: var(--text);
+    color: var(--bg);
+
+    border-color: var(--text);
+  }
+
+}
+
