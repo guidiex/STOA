@@ -2,7 +2,7 @@
 // STOA — SERVICE WORKER
 // =========================
 
-const CACHE_NAME = "stoa-v3";
+const CACHE_NAME = "stoa-v1.0.0";
 
 const FILES_TO_CACHE = [
   "./",
