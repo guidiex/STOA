@@ -1,1 +1,5 @@
 node_modules/
+keystore/
+*.jks
+*.keystore
+android/.idea/runConfigurations.xml
